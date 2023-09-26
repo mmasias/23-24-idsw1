@@ -14,3 +14,13 @@ En la medida de lo posible, las clases en el aula -2.1
   * Sesiones de requisitado
     * [Planteamiento](docs/sesionesRequisitado/infoParaAlumnos.md)
     * [Grupos](docs/grupos.md)
+
+## Herramientas
+
+- [PlantText](https://www.planttext.com/), para usar el formato [PlantUML](https://plantuml.com/es/) al realizar diagramas [de actividades](https://plantuml.com/es/activity-diagram-beta), [de estados](https://plantuml.com/es/state-diagram), de [clases](https://plantuml.com/es/class-diagram) y de [objetos](https://plantuml.com/es/object-diagram). 
+- [Google Docs](https://drive.google.com/drive/u/0/my-drive)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [GIT](https://git-scm.com/) & [GitHub](https://github.com/)
+
+## Bibliografía & enlaces interesantes
+
