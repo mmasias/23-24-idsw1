@@ -10,7 +10,7 @@ En la medida de lo posible, las clases en el aula -2.1
 
 * [Temario](docs/temario.md)
 * Proyectos que abordaremos:
-  * [Modelado de la Universidad](actividades/001-Universidad/)
+  * [Modelado de la Universidad](actividades/001-Universidad/README.md)
   * appUniversidad
 * Sesiones de requisitado
   * [Planteamiento](docs/sesionesRequisitado/infoParaAlumnos.md)
