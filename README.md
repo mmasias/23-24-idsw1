@@ -4,14 +4,13 @@ Repo de materiales y proyectos de la asignatura **Ingeniería del Software I** d
 
 ## Curso [23][24]
 
-Primero, [#2Think](docs/2think.md)
+Primero, [#2Think](temario/2think.md)
 
 En la medida de lo posible, las clases en el aula -2.1
 
-* [Temario](docs/temario.md)
+* [Temario](temario/README.md)
+* [Retos](retos/README.md)
 * Proyectos que abordaremos:
-  * [Modelado de la Universidad](actividades/001-Universidad/README.md)
-  * appUniversidad
-* Sesiones de requisitado
-  * [Planteamiento](docs/sesionesRequisitado/infoParaAlumnos.md)
-  * [Grupos](docs/grupos.md)
+  * Sesiones de requisitado
+    * [Planteamiento](docs/sesionesRequisitado/infoParaAlumnos.md)
+    * [Grupos](docs/grupos.md)
