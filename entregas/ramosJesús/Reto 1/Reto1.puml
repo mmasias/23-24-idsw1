@@ -1,0 +1,52 @@
+@startuml
+' avoid problems with angled crows feet
+skinparam linetype ortho
+
+entity "Universidad" as u {
+}
+
+entity "Personal" as p {
+}
+
+entity "Docente e Investigador" as pdi {
+}
+
+entity "Administrativo" as pas {
+}
+
+entity "Becario" as alb {
+}
+
+
+entity "Alumnos" as al {
+}
+
+entity "Año" as an {
+}
+
+entity "Curso" as c {
+}
+
+entity "Asignatura" as asig {
+}
+
+entity "Grupo" as gr {
+}
+
+entity "Pago" as pag {
+}
+
+u ||..o{ p : Contrata
+u |o..o{ al : Cliente
+p |o..o{ pdi : enseña e investiga
+p |o..o{ pas : administra
+al |o..o{ alb : colaboran
+al |o..o{ asig : se matriculan
+pdi |o..o{ asig : Es docente de
+asig |o..o{ gr : tiene
+asig |o..o{ c : tiene
+asig |o..o{ an : tiene
+pag |o..o{ al : paga
+al |o..o{ c : pertenece
+
+@enduml
