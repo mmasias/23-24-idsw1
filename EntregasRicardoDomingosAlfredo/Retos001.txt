@@ -1,0 +1,148 @@
+@startuml
+
+class UneAtlantico {
+  - Nombre
+  - Dirección
+  - Contacto
+  - Año de Fundación
+  + getNombre()
+  + setNombre()
+  + getDirección()
+  + setDirección()
+  + getContacto()
+  + setContacto()
+  + getAñoFundación()
+  + setAñoFundación()
+}
+
+class Facultad {
+  - Nombre
+  - Decano
+  + getNombre()
+  + setNombre()
+  + getDecano()
+  + setDecano()
+}
+
+class Departamento {
+  - Nombre
+  - Jefe de Departamento
+  + getNombre()
+  + setNombre()
+  + getJefeDepartamento()
+  + setJefeDepartamento()
+}
+
+class ProgramaAcademico {
+  - Nombre
+  - Descripción
+  - Duración
+  - Grado
+  + getNombre()
+  + setNombre()
+  + getDescripción()
+  + setDescripción()
+  + getDuración()
+  + setDuración()
+  + getGrado()
+  + setGrado()
+}
+
+class Curso {
+  - Nombre
+  - Código
+  - Créditos
+  - Descripción
+  + getNombre()
+  + setNombre()
+  + getCódigo()
+  + setCódigo()
+  + getCréditos()
+  + setCréditos()
+  + getDescripción()
+  + setDescripción()
+}
+
+class Estudiante {
+  - Nombre
+  - ID
+  - Dirección
+  - Fecha de Nacimiento
+  - Email
+  + getNombre()
+  + setNombre()
+  + getID()
+  + setID()
+  + getDirección()
+  + setDirección()
+  + getFechaNacimiento()
+  + setFechaNacimiento()
+  + getEmail()
+  + setEmail()
+}
+
+class Profesor {
+  - Nombre
+  - ID
+  - Dirección
+  - Email
+  - Especialidad
+  + getNombre()
+  + setNombre()
+  + getID()
+  + setID()
+  + getDirección()
+  + setDirección()
+  + getEmail()
+  + setEmail()
+  + getEspecialidad()
+  + setEspecialidad()
+}
+
+class PersonalAdministrativo {
+  - Nombre
+  - ID
+  - Cargo
+  - Email
+  + getNombre()
+  + setNombre()
+  + getID()
+  + setID()
+  + getCargo()
+  + setCargo()
+  + getEmail()
+  + setEmail()
+}
+
+class Horario {
+  - Dia
+  - Hora de Inicio
+  - Hora de Término
+  + getDia()
+  + setDia()
+  + getHoraInicio()
+  + setHoraInicio()
+  + getHoraTermino()
+  + setHoraTermino()
+}
+
+class Calificación {
+  - Nota
+  - Fecha
+  + getNota()
+  + setNota()
+  + getFecha()
+  + setFecha()
+}
+
+Institucion -- Facultad
+Facultad -- Departamento
+Facultad -- ProgramaAcademico
+Departamento -- Curso
+ProgramaAcademico -- Curso
+ProgramaAcademico -- Estudiante
+Curso -- Estudiante
+Profesor -- Departamento
+Estudiante -- Calificación
+
+@enduml
