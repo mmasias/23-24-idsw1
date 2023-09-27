@@ -1,0 +1,26 @@
+startuml
+!define ENTITY entity
+
+package "Universidad" {
+  ENTITY Professor {}
+
+  ENTITY Student {}
+
+  ENTITY PDI {}
+
+  ENTITY PAS {}
+
+  ENTITY Trabajadores{}
+
+  ENTITY Classroom{}
+
+  ENTITY Becario{}
+
+Professor -d- Classroom: Enseña en
+Professor -up- PDI: Pertenece a
+
+Student -r- Classroom : Estudia en
+Student -down- Becario: Puede ser
+Trabajadores -up- PAS: Pertenecen a
+Becario -r- PAS: Pertenece a
+@enduml
