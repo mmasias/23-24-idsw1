@@ -1,0 +1,7 @@
+# Modelo del dominio de la Universidad
+
+El reto consiste en plantear una primera versión del modelo del dominio de la Universidad.
+
+
+Adjunto url:
+    www.plantuml.com/plantuml/dpng/LOzDJWCn38NtFiLSO2x0ecgXgEgcGa8Sm2H6YfJ4aPEmGTmTXqapwSxFt_FFE-Q2KchmO3pcl7n4zqsIdKNxymkz-NQ-gkZrwNtK5q7BUSYNAdcI9rz3v25VG_BquB_nCnaKjtjs3TCZws7CBa-BuLW42y9ehkj1lrAKI0f5ClJ8pjUPpPkLNgJl_M89MYw91NH4qPP7aGi9THesxo3z6KUHOEiewh6L1IpYJFLjvdzh9ytKWwgByjo_yKuYDtZN2ZLak-ZnamNRQJXIj3NuFm00
