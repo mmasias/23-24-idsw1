@@ -1,0 +1,43 @@
+@startuml
+class Universidad {
+  + nombre
+  + dirección
+}
+
+class Grado {
+  + nombre
+  + director
+}
+
+class Materia {
+  + id_Materia
+  + Titulo
+  + Creditos
+}
+
+class Profesor {
+  + nombre
+}
+
+class Alumno {
+  + nombre
+  + grado
+}
+
+class Empleado {
+  + nombre
+}
+
+Universidad ||--|{ Alumno
+Universidad ||--|{ Grado
+Universidad ||--|{ Materia
+Profesor }|--|{ Grado
+Empleado }|--|| Universidad
+Profesor }|--|{ Materia
+Alumno }|--|{ Materia
+Alumno }|--|| Grado
+Alumno }|--|{ Profesor
+@enduml
+
+
+@enduml
