@@ -1,0 +1,37 @@
+@startuml universidad
+
+class UNEATLANTICO
+class Estudiante
+class PDI
+class PASS
+class Becario
+class Facultades
+class Profesor_Asociado
+class Trabajador
+class Salud
+class Humanidades
+class Politécnica
+class Departamentos
+class Administracion
+class ORI
+class SEMU
+class Secretaría
+
+UNEATLANTICO -- Trabajador
+UNEATLANTICO -- Estudiante
+UNEATLANTICO -- Facultades
+UNEATLANTICO -- Departamentos
+Trabajador .. Departamentos
+Trabajador -- PDI
+Trabajador -- PASS
+Departamentos -- Administracion
+Departamentos -- ORI
+Departamentos -- SEMU
+Departamentos -- Secretaría
+Estudiante -- Becario
+PDI -- Profesor_Asociado
+Facultades -- Salud
+Facultades -- Humanidades
+Facultades -- Politécnica
+
+@enduml
