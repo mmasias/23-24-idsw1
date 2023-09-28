@@ -1,0 +1,31 @@
+@startuml atlantico
+class Universidad
+class Departamento
+class ProgramaAcademico
+class Alumnos
+class Profesores
+class Administrativos
+class Becarios
+class Curso
+class Asignaturas
+class Horario
+class Acta
+class Dia
+class Hora
+
+Universidad -- Departamento
+Departamento -- ProgramaAcademico
+ProgramaAcademico -- Alumnos
+ProgramaAcademico -- Profesores
+ProgramaAcademico -- Administrativos
+Alumnos -- Curso
+Profesores -- Curso
+Administrativos -- Curso
+Alumnos -- Asignaturas
+Profesores -- Asignaturas
+Curso -- Horario
+Curso -- Acta
+Horario -- Dia
+Horario -- Hora
+Becarios --|> Alumnos
+@enduml
