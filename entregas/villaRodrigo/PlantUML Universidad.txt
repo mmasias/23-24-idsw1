@@ -1,0 +1,23 @@
+@startuml
+Uneat -- Grados : contiene 
+Uneat -- Postgrados : contiene 
+Uneat -- Administración : contiene 
+
+Grados --- Ciencias_Salud : facultad
+Grados --- Escuela_Politecnica_Superior : facultad
+Grados --- Ciencias_Sociales_y_Humanidades: facultad
+
+Postgrados --- Doctorados
+Postgrados --- Másteres_Universitarios
+Postgrados --- Másteres_Propios
+
+Grados -- Alumnos : compuesto por 
+Grados -- Profesores : compuesto por 
+Postgrados -- Alumnos : compuesto por 
+Postgrados -- Profesores : compuesto por 
+
+Administración --- Oficina_Relaciones_Internaciones : formado por
+Administración --- Secretaría_Académica : formado por 
+Administración --- Centro_de_Idiomas : formado por 
+
+@enduml
