@@ -1,37 +1,54 @@
 @startuml universidad
 
-class UNEATLANTICO
-class Estudiante
-class PDI
-class PASS
-class Becario
-class Facultades
+class UNEATLANTICO{
+   
+}
+class Estudiante{
+   Grado
+   Curso
+   Asignaturas
+}
+class PDI {
+   Grado
+   Asignaturas
+}
+class PASS {
+   Grado
+   Curso
+   Departamento
+}
+class Becario {
+   Departamento
+   Porcentaje
+}
+class Facultad
 class Profesor_Asociado
 class Trabajador
-class Salud
-class Humanidades
-class Politécnica
-class Departamentos
+class Grado {
+   Nombre
+   Director
+   Plan_de_estudios
+}
 class Administracion
-class ORI
-class SEMU
-class Secretaría
-
+interface Persona{
+   DNI
+   Nombre
+   Apellido
+   Edad
+   Nacionalidad
+   Fecha_Nacimiento
+}
 UNEATLANTICO -- Trabajador
 UNEATLANTICO -- Estudiante
-UNEATLANTICO -- Facultades
-UNEATLANTICO -- Departamentos
-Trabajador .. Departamentos
+UNEATLANTICO -- Facultad
+UNEATLANTICO -- Administracion
+Trabajador -- Persona
+Trabajador .. Administracion
 Trabajador -- PDI
 Trabajador -- PASS
-Departamentos -- Administracion
-Departamentos -- ORI
-Departamentos -- SEMU
-Departamentos -- Secretaría
+Estudiante -- Persona
 Estudiante -- Becario
 PDI -- Profesor_Asociado
-Facultades -- Salud
-Facultades -- Humanidades
-Facultades -- Politécnica
+Facultad -- Grado
 
 @enduml
