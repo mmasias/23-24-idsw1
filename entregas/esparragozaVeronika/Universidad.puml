@@ -1,6 +1,4 @@
 @startuml
-
-package "Universidad" {
 class Profesor
 class Estudiante
 class PDI
@@ -9,6 +7,7 @@ class Becario
 class Universidad
 class Facultad
 class Materia
+
 Estudiante -- Universidad : Hace parte
 Estudiante -- Materia : Estudia en
 Profesor -- Materia : Enseña en
