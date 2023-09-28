@@ -1,0 +1,33 @@
+@startuml
+
+Class Administrativo
+Class Facultad
+Class Grado
+Class Curso
+Class Asignatura
+Class Persona
+Class Alumno
+Class Profesor
+Class Aula
+Class Clase
+Class Horario
+Class Dia
+Class Hora
+
+Persona *-- Administrativo
+Persona *-- Alumno
+Persona *-- Profesor
+Curso *-- Grado
+Facultad *-- Grado
+Grado *-- Alumno
+Grado *-- Asignatura
+Asignatura *-- Alumno
+Asignatura *-- Profesor
+Clase *-- Profesor
+Aula *-- Clase
+Clase *-- Horario
+Horario *-- Dia
+Horario *-- Hora
+
+
+@enduml
