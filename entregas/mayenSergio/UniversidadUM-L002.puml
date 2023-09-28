@@ -1,0 +1,66 @@
+@startuml
+
+Class Administrativo {
+    - Persona()
+}
+Class Facultad {
+    + nombre
+}
+Class Grado {
+    + nombre
+    - Facultad()
+}
+Class Curso {
+    - SemestreI()
+    - SemestreII()
+    - Grado()
+}
+Class Asignatura {
+    + nombre
+    - Grado()
+}
+Class Persona {
+    + nombre
+    + apellido
+    + DNI
+}
+Class Alumno {
+    - Persona()
+}
+Class Profesor {
+    - Persona()
+    - Asignatura()
+}
+Class Aula {
+    + salon
+}
+Class Clase {
+
+}
+Class Horario {
+
+}
+Class Dia {
+    - getDay()
+}
+Class Hora {
+    - getHours()
+}
+
+Persona *-- Administrativo : es parte de
+Persona *-- Alumno : es parte de
+Persona *-- Profesor : es parte de
+Curso *-- Grado : está contenida en
+Facultad *-- Grado : es miembro de
+Grado *-- Alumno : es parte de
+Grado *-- Asignatura : es parte de
+Asignatura *-- Alumno : es miembro de
+Asignatura *-- Profesor : gestiona a
+Clase *-- Profesor : gestiona a
+Aula *-- Clase : : se registra a
+Clase *-- Horario : se registra a
+Horario *-- Dia : es una descripción de
+Horario *-- Hora : es una descripción de
+
+
+@enduml
