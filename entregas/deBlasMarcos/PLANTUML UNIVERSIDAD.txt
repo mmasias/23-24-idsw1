@@ -1,0 +1,55 @@
+@startuml
+
+package "Universidad Europea del Atlántico" {
+
+class Universidad {
+  + nombre
+}
+
+class Facultad {
+  + nombre
+  + ubicacion
+}
+
+class Departamentos {
+  + nombre
+}
+
+class Grados {
+  + titulo
+  + creditos
+}
+
+class Profesores {
+  + nombre
+  + especialidad
+  + titulo
+}
+
+class Alumnos {
+  + nombre
+  + matricula
+}
+
+class Administracion {
+  + nombre
+  + puesto
+}
+
+class Mantenimiento {
+  + nombre
+  + turno
+}
+
+Universidad -- Facultad : Contiene >
+Facultad -- Departamentos : Contiene >
+Departamentos -- Profesores : Tiene >
+Profesores -- Grados : Enseña >
+Alumnos -- Grados : Estudia >
+Alumnos -- Facultad : Contiene <
+Universidad -- Administracion : Emplea >
+Universidad -- Mantenimiento : Emplea >
+
+}
+
+@enduml
