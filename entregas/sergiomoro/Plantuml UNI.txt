@@ -1,0 +1,67 @@
+@startuml
+
+class Universidad {
+  + nombre: String
+}
+
+class Rector {
+  + nombre: String
+  + edad: int
+  + experiencia: int
+}
+
+class Profesor {
+  + nombre: String
+  + edad: int
+  + titulacion: String
+  + experiencia: int
+}
+
+class Asignatura {
+  + nombre: String
+  + codigo: String
+  + creditos: int
+}
+
+class Grado {
+  + nombre: String
+  + duracion: int  // en años
+  + codigo: String
+}
+
+class Departamento {
+  + nombre: String
+}
+
+class Trabajador {
+  + nombre: String
+  + edad: int
+  + funcion: String
+  + experiencia: int
+}
+
+class Alumno {
+  + nombre: String
+  + edad: int
+  + matricula: String
+  + tipo: TipoBeca
+}
+
+enum TipoBeca {
+  Becado,
+  NoBecado
+}
+
+Universidad "1" -- "1" Rector: "tiene >"
+Universidad "1" -- "*" Grado: "ofrece >"
+Universidad "1" -- "*" Profesor: "emplea >"
+Universidad "1" -- "*" Departamento: "contiene >"
+
+Grado "1" -- "*" Asignatura: "consta de >"
+Grado "1..*" -- "*" Alumno: "matriculados >"
+
+Profesor "1..*" -- "*" Asignatura: "enseña >"
+
+Departamento "1" -- "*" Trabajador: "emplea >"
+
+@enduml
