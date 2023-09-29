@@ -1,0 +1,13 @@
+@startuml
+Universidad --|> Facultad :tiene
+Facultad --|> Grados :tiene
+asignaturas <|-- Alumnos :tienen
+asignaturas <|-- profesores :enseñan
+Universidad --|> administrativo :tiene
+Facultad --|> becarios :tiene
+Grados --|> cursos :tiene
+cursos --|> asignaturas :tienen
+Universidad --|> aulas :tiene
+cursos --|> horario :tienen
+
+@enduml
