@@ -2,51 +2,47 @@
 
 class Universidad {
 
-`  `+ nombre: Uneatlantico
+nombre: Uneatlantico
 
 }
 
 class Facultad {
-
-`  `+ nombre: String
+nombre: String
 
 }
 
 class Departamento {
-
-`  `+ nombre: String
+nombre: String
 
 }
 
 class Profesor {
 
-`  `+ nombre: String
-
-`  `+ apellido: String
+nombre: String
+apellido: String
 
 }
 
 class Estudiante {
 
-`  `+ nombre: String
+nombre: String
 
-`  `+ apellido: String
+apellido: String
 
 }
 
 class Curso {
 
-`  `+ codigo: String
+codigo: String
 
-`  `+ nombre: String
+nombre: String
 
 }
 
 class Asignatura {
 
-`  `+ codigo: String
-
-`  `+ nombre: String
+codigo: String
+nombre: String
 
 }
 
