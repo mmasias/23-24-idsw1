@@ -1,0 +1,83 @@
+@startuml Universidad
+
+class Universidad {
+  - nombre: String
+  - ubicacion: String
+  + obtenerNombre(): String
+  + establecerNombre(nombre: String): void
+  + obtenerUbicacion(): String
+  + establecerUbicacion(ubicacion: String): void
+}
+
+class Facultad {
+  - nombre: String
+  + obtenerNombre(): String
+  + establecerNombre(nombre: String): void
+}
+
+class Departamentos {
+  - nombre: String
+  + obtenerNombre(): String
+  + establecerNombre(nombre: String): void
+}
+
+class PAS{
+  - nombre: String
+  + obtenerNombre(): String
+  + establecerNombre(nombre: String): void
+}
+
+class Administrativos{
+  - nombre: String
+  + obtenerNombre(): String
+  + establecerNombre(nombre: String): void
+}
+
+class PDI{
+  - nombre: String
+  + obtenerNombre(): String
+  + establecerNombre(nombre: String): void
+}
+
+class Curso {
+  - nombre: String
+  - codigo: String
+  + obtenerNombre(): String
+  + establecerNombre(nombre: String): void
+  + obtenerCodigo(): String
+  + establecerCodigo(codigo: String): void
+}
+
+class Estudiantes {
+  - nombre: String
+  - matricula: String
+  + obtenerNombre(): String
+  + establecerNombre(nombre: String): void
+  + obtenerMatricula(): String
+  + establecerMatricula(matricula: String): void
+}
+
+class Becario {
+  - tipo: String
+  + obtenerTipo(): String
+  + establecerTipo(tipo: String): void
+}
+
+class NoBecario {
+  - tipo: String
+  + obtenerTipo(): String
+  + establecerTipo(tipo: String): void
+}
+
+Universidad -D- Facultad : tiene
+Facultad -D- Departamentos : tiene
+Departamentos -L- PAS: tiene
+Departamentos -R- PDI: tiene
+PDI -- Curso : ensena
+Curso -- Estudiantes: tiene
+PAS -- Administrativos: tiene
+Estudiantes -- Becario: puede ser
+Estudiantes -- NoBecario: puede ser
+Becario -- PAS: considerado
+
+@enduml
