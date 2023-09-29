@@ -1,0 +1,47 @@
+@startuml
+class Universidad {
+  + nombre: String
+}
+
+class profesores {
+  + nombre: String
+  + edad: int
+  + titulacion: String
+  + experiencia: int
+}
+
+class asignaturas {
+  + nombre: String
+  + codigo: String
+  + creditos: int
+}
+
+class Grados {
+  + nombre: String
+  + duracion: int  // en años
+  + codigo: String
+}
+
+class Alumnos {
+  + nombre: String
+  + edad: int
+  + matricula: String
+  + tipo: TipoBeca
+}
+
+enum becarios {
+  Becado,
+  NoBecado
+}
+
+Universidad --|> Facultad :tiene
+Facultad --|> Grados :tiene
+asignaturas <|-- Alumnos :tienen
+asignaturas <|-- profesores :enseñan
+Universidad --|> administrativo :tiene
+Facultad --|> becarios :tiene
+Grados --|> cursos :tiene
+cursos --|> asignaturas :tienen
+Universidad --|> aulas :tiene
+cursos --|> horario :tienen
+@enduml
