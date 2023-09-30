@@ -1,0 +1,51 @@
+@startuml UNEAT
+
+class Estudios {
+}
+class Instalaciones {
+}
+class Personal {
+}
+class PersonalExterno{
+}
+class PersonalInterno{
+}
+class Grado{
+}
+class PostGrado{
+}
+class Alumno{
+}
+class Profesor {
+}
+class PersonalAdministrativo{
+}
+class Aula {
+}
+class InstalacionesDeportivas{
+}
+class Asignatura {
+}
+class Facultad {
+}
+
+UNEAT-- Estudios : Ofrece
+UNEAT-- Instalaciones : Tiene
+UNEAT-- Personal : Tiene
+Instalaciones-- InstalacionesDeportivas
+Instalaciones-- Cafetería
+Instalaciones-- Facultad
+Facultad-- Aula
+Estudios-- Grado
+Estudios-- PostGrado
+Grado-- Alumno
+Personal-- PersonalInterno
+Personal-- PersonalExterno
+PersonalInterno-- Profesor
+PersonalInterno-- PersonalAdministrativo
+Grado-- Asignatura
+PostGrado-- Asignatura
+Grado-- Profesor
+Profesor -- Asignatura : imparte
+
+@enduml
