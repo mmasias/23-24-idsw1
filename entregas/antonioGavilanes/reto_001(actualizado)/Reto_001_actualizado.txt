@@ -1,0 +1,80 @@
+Entidades candidatas
+=========================================
+@startuml
+class Universidad
+class Profesor
+class Director_de_Grado
+class Alumno
+class Becario
+class Personal
+class Grado
+class Materia
+class Clase
+class Salón
+class Plan_de_Estudio
+class Horario
+class Dia
+class Hora
+class Crédito
+class Cafetería
+class Salón_de_Actos
+class Reuniones/Presentaciones
+class Equipo/Material_de_Clase
+class Biblioteca
+class Laboratorio
+@enduml
+
+=========================================
+Entidades ya agrupadas
+=========================================
+@startuml
+class Universidad
+class Profesor
+class Director_de_Grado
+class Alumno
+class Becario
+class Personal
+class Salón
+class Equipo
+@enduml
+=========================================
+Final
+=========================================
+@startuml
+class Universidad{
+  + nombre
+  + dirección
+}
+class Profesor{
+  + nombre
+}
+class Director_de_Grado{
+  + nombre
+}
+class Alumno{
+  + nombre
+}
+class Becario{
+  + nombre
+}
+class Personal{
+  + nombre
+}
+class Salón{
+  + número
+  + planta
+
+}
+class Equipo
+
+Profesor }|--|| Director_de_Grado
+Grado ||--|| Director_de_Grado
+Universidad ||--|{ Grado
+Universidad ||--|{ Personal
+Grado ||--|{ Alumno
+Profesor ||--|{ Grado
+Alumno }|--|{ Becario
+Grado }|--|{ Salón
+Salón }|--|{ Equipo
+@enduml
+=========================================
