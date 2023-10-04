@@ -1,0 +1,37 @@
+@startuml
+Class Universidad {
+Ubicacion
+}
+Class Pas {
+AreaTrabajo
+}
+Class Profesor {
+Contrato
+
+}
+Class Estudiante {
+Extranjero
+}
+Class Becario {
+PorcentajeBeca
+}
+Class Clase {
+CantidadAlumnos
+}
+Class Carrera {}
+Class CursoAcademico {}
+
+Universidad <-- Pas 
+Universidad <-- Estudiante
+Universidad <-- Profesor
+Estudiante <-- Becario: puede ser 
+Estudiante --> Clase: recibe
+Estudiante --> Carrera: estudia
+Estudiante --> CursoAcademico: cursa 
+Profesor --> Clase: imparte
+Profesor --> Carrera: a cargo
+Profesor --> Estudiante: da clase a
+Clase --> CursoAcademico
+Clase --> Carrera
+Pas --> Administración
+@enduml
