@@ -1,0 +1,58 @@
+@startuml
+
+Uneatlantico --|> Individuo
+Individuo --|> Trabajador
+Individuo --|> Alumno
+Alumno --|> Becario
+Trabajador --|> Profesor
+Trabajador --|> Administracion
+
+class Uneatlantico{
++contratarTrabajador()
++ofrecerBeca()
++añadirAlumno()
+
+}
+
+class Individuo {
+-Nombre
+-Apellido
+-Fecha de nacimiento
+-direccion
++edad()
++nombreCompleto()
+}
+
+class Alumno {
+-carrera
+-curso
++asignaturasCursadas()
++AsignaturasAprobadas()
++AsignaturasSuspensas()
+}
+
+class Trabajador {
+-Salario
+-Oficio
++obtenerSalario()
+
+}
+
+class Profesor {
+-Especializacion
++clasesQueImparte()
+
+}
+
+class Administracion {
++cosasAdministrativas()
+}
+
+ 
+class Becario {
+-Descuento
+-Horas Semanales
+-Departamento de trabajo
+}
+
+@enduml
