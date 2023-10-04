@@ -1,0 +1,63 @@
+@startuml
+
+' Entities
+
+class UNEATLANTICO {
+  + Nombre
+  + Dirección
+  + Año de establecimiento
+}
+
+class Facultad {
+  + Nombre
+  + Decano
+}
+
+class Grado {
+  + Nombre
+  + Director de Grado
+}
+
+class Materia {
+  + Id de la Materia
+  + Titulo
+  + Creditos
+}
+
+class Profesor {
+  + Nombre
+  + Id de Empleado
+}
+
+class Estudiantet {
+  + Nombre
+  + Id del Estudiante
+  + Grado
+}
+
+class Personal {
+  + Nombre
+  + Id de Empleado
+  + Rol
+}
+
+' Relationships
+
+UNEATLANTICO "1" -- "0..*" Facultad : Contiene
+UNEATLANTICO "1" -- "0..*" Personal : Emplea
+
+Facultad "1" -- "0..*" Grado : Contiene
+Facultad "0..1" -- "1" Personal : El decano es
+
+Grado "1" -- "0..*" Materia : Ofrece
+Grado "1" -- "0..*" Profesor : Emplea
+Grado "0..1" -- "1" Personal : El director es
+
+Materia "1" -- "0..1" Profesor : Es impartida por
+Materia "0..*" -- "0..*" Estudiantet : Matriculado en <--> Materias
+
+Profesor "1" -- "0..*" Materia : Imparte
+
+Estudiantet "1" -- "1" Grado : Estudia
+
+@enduml
