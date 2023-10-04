@@ -1,0 +1,22 @@
+@startuml
+
+
+class Universidad
+Universidad --> Facultad : conformado por
+Facultad --> Administracion : contiene
+Facultad --> Grado : contiene
+Grado --> Asignatura : introduce
+Grado --> Curso : introduce
+Asignatura --> Alumno : se divide en
+Asignatura --> Profesor : se divide en
+Asignatura --> Aula : se divide en
+Curso --> Horario : esta distribuido en
+Curso --> Aula : esta distribuido en
+Administracion --> Becario : esta relacionado con
+Becario --> Alumno : forma parte de
+Aula --> Salon_de_acto : en otros casos
+Profesor --> Tutor : esta relacionado con
+Horario --> Dia : presenta
+Horario --> Hora : presenta
+@enduml
+
