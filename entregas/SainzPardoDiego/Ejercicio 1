@@ -1,0 +1,11 @@
+@startuml
+
+Persona <|-- Uneatlantico
+Estudiante <|-- Persona
+Trabajador <|-- Persona
+Profesor <|-- Trabajador
+Administracion <|-- Trabajador
+PersonalGestion <|-- Administracion
+  
+Becario <|-- Trabajador
+@enduml
