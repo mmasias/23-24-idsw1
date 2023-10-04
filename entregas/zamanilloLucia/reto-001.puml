@@ -1,0 +1,45 @@
+@startuml
+
+
+' hide the spot
+hide circle
+
+entity "Universidad" as e01 {
+}
+entity "Institución" as e02 {
+}
+entity "Clases" as e03 {
+}
+entity "Laboratorios" as e11 {
+}
+entity "Servicios" as e04{
+}
+entity "Empleados" as e05 {
+}
+entity "PDI" as e06 {
+}
+entity "PAS" as e07 {
+}
+entity "Alumnos" as e08{
+}
+entity "Grados" as e13 {
+}
+entity "Cursos" as e14 {
+}
+
+e01<--e02
+e02<--e04
+e02<--e05
+e05<--e06
+e05<--e07
+e02<--e08
+e13<--e14
+e14<--e08
+e01<--e03
+e01<--e11
+
+
+
+
+
+@enduml
