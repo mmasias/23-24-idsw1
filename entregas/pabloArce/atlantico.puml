@@ -1,0 +1,77 @@
+@startuml Uneatlantico
+class Universidad {
+  -nombre: String
+}
+
+class Departamento {
+  -nombre: String
+}
+
+class ProgramaAcademico {
+  -nombre: String
+  -descripcion: String
+}
+
+class Alumnos {
+  -nombre: String
+  -apellido: String
+}
+
+class Profesores {
+  -nombre: String
+  -apellido: String
+  -titulo: String
+}
+
+class Administrativos {
+  -nombre: String
+  -cargo: String
+}
+
+class Becarios {
+  -nombre: String
+  -apellido: String
+  -tipoBeca: String
+}
+
+class Curso {
+  -nombre: String
+}
+
+class Asignaturas {
+  -nombre: String
+  -codigo: String
+}
+
+class Horario {
+  -diaSemana: String
+}
+
+class Acta {
+  -numero: String
+}
+
+class Dia {
+  -fecha: String
+}
+
+class Hora {
+  -hora: String
+}
+
+Universidad -- Departamento
+Departamento -- ProgramaAcademico
+ProgramaAcademico -- Alumnos
+ProgramaAcademico -- Profesores
+ProgramaAcademico -- Administrativos
+Alumnos -- Curso
+Profesores -- Curso
+Administrativos -- Curso
+Alumnos -- Asignaturas
+Profesores -- Asignaturas
+Curso -- Horario
+Curso -- Acta
+Horario -- Dia
+Horario -- Hora
+Becarios --|> Alumnos
+@enduml
