@@ -1,0 +1,104 @@
+@startuml
+!define ENTITY entity
+
+ENTITY Universidad{}
+ 
+ENTITY Materia{
+   ID
+   Nombre
+}
+
+  ENTITY Grado{
+     ID
+     Nombre
+}
+
+  ENTITY Estudiante {
+     ID
+     Name
+     FechaDeNacimieto
+     Email
+     PROFER
+}
+
+
+  ENTITY PAS {
+}
+
+  ENTITY Administracion{}
+
+  ENTITY Admiciones{
+     Trabajadores
+}
+  ENTITY SecretariaAcdemica{
+     Trabajadores
+}
+  ENTITY ORI{
+     Trabajadores
+}
+
+ ENTITY Servicio{}
+
+ ENTITY Recepcion{
+    ID
+    Nombre
+    Email
+
+}
+
+ ENTITY Limpieza{
+    ID
+    Nombre
+    Email
+}
+
+ ENTITY PROFER{}
+
+  ENTITY PDI {
+}
+
+  ENTITY Departamento{
+}
+
+ ENTITY Profesor {
+     ID
+     Nombre
+     Email
+     
+} 
+  ENTITY Aula{
+     ID
+     Nombre
+}
+ 
+
+Universidad --- PAS
+Universidad --- PDI
+Universidad --- Grado
+Universidad--- Aula
+
+Grado--- Estudiante
+Grado--- Materia: Hay
+Grado--- Profesor: Hay
+Materia--- Aula: Tiene
+
+PAS--- Administracion: Pertence a 
+Administracion --- Admiciones
+Administracion --- SecretariaAcdemica
+Administracion --- ORI
+
+PAS--- Servicio: Pertence a 
+Servicio --- Recepcion
+Servicio --- Limpieza
+
+PAS--- PROFER: Pertence a 
+
+PDI--- Departamento: Tiene
+Departamento--- Profesor : Pertenece
+
+
+Materia--- Estudiante: Tiene
+Profesor --- Aula: Enseña en
+Estudiante--- Aula : Estudia en
+Limpieza--- Aula
+@enduml
