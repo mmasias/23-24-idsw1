@@ -1,0 +1,60 @@
+@startuml
+class Uneatlantico{
+    - nombre: 
+    - ubicacion:  
+    + registrarEstudiante()
+    + contratarProfesor()
+    + asignarBecario()
+    + contratarTrabajador()
+}
+
+class Persona {
+    - nombre:  
+    - apellido:  
+    - fechaNacimiento:  
+    - direccion:  
+    + obtenerEdad():  
+}
+
+class Estudiante {
+    - matricula: 
+    - carrera:  
+    + inscribirCurso()
+    + verCalificaciones()
+}
+
+class Trabajador {
+    - ID:  
+    - salario:  
+    + realizarTrabajo()
+    + calcularSalario()
+}
+
+class Profesor {
+    - asignatura:
+    - horario:
+    + darClase()
+    + calificarExamen()
+}
+
+class Administracion {
+    + funcionesAdministrativas()
+}
+
+ 
+class Becario {
+    - area:  
+    - duracion: 
+    + realizarInvestigacion()
+    + obtenerInforme():  
+}
+
+Persona <|-- Uneatlantico
+Estudiante <|-- Persona
+Trabajador <|-- Persona
+Profesor <|-- Trabajador
+Administracion <|-- Trabajador
+PersonalGestion <|-- Administracion
+  
+Becario <|-- Trabajador
+@enduml
