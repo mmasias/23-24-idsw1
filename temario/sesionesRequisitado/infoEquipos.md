@@ -37,7 +37,7 @@ Lógicamente, que sea algo que les repercuta lo menos posible en las actividades
 No descarten implicarse en un día (o unas horas) con el cliente (lógicamente si la discreción de las labores que están desarrollando lo permiten). 
 Como ingenieros de requisitos esta es una dinámica con la que se encontrarán en su día a día, así que cuanto más cercana a la realidad, mejor.
 
-<center>
+<div align=center>
 
 |Profesor|py|Sesión I|Sesión II
 |-|:-:|-|-|
@@ -48,7 +48,7 @@ Como ingenieros de requisitos esta es una dinámica con la que se encontrarán e
 |David García|*pyHorarios*
 |Jesús Peña|
 
-</center>
+</div>
 
 ## Acerca de la conformación de los grupos
 
