@@ -1,0 +1,176 @@
+@startuml UNEAT
+
+class UNEAT {
+  - nombre: string
+  - direccion: string
+  - telefono: string
+  - rector: Persona
+  - facultades: Facultad[]
+}
+
+class Facultad {
+  - nombre: string
+  - decano: Persona
+  - programasAcademicos: ProgramaAcademico[]
+}
+
+class ProgramaAcademico {
+  - nombre: string
+  - codigo: string
+  - estudiantes: Estudiante[]
+  - profesores: Profesor[]
+  - horarios: Horario[]
+}
+
+class Persona {
+  - nombre: string
+  - cedula: string
+  - direccion: string
+  - telefono: string
+}
+
+class Estudiante {
+  - matricula: string
+  - programasAcademicos: ProgramaAcademico[]
+  - persona: Persona
+}
+
+class EquipoDocente{
+    - nombre: string
+    - codigoEmpleado: string
+    - ProgramaAcademico: ProgramaAcademico
+    - persona: Persona
+}
+
+class Profesor {
+  - codigoEmpleado: string
+  - programasAcademicos: ProgramaAcademico[]
+  - persona: Persona
+}
+
+class EquipoDirectivo {
+  - decano: Persona
+  - vicedecano: Persona
+  - otrosMiembros: Persona[]
+}
+
+class Rector{
+    - nombre: string
+    - codigoEmpleado: string
+    - UNEAT: UNEAT
+    - persona: Persona
+}
+
+class Decano{
+    - nombre: string
+    - codigoEmpleado: string
+    - EquipoDirectivo: EquipoDirectivo
+    - facultad: Facultad
+    - persona: Persona
+}
+
+class Secretaria {
+  - nombre: string
+  - codigoEmpleado: string
+  - EquipoAdministrativo: EquipoAdministrativo
+  - universidad: UNEAT
+}
+
+class Secretario{
+    - nombre: string
+    - codigoEmpleado: string
+    - EquipoAdministrativo: EquipoAdministrativo
+    - persona: Persona
+}
+
+class EquipoAdministrativo {
+  - nombre: string
+  - codigoEmpleado: string
+  - facultad: Facultad
+  - persona: Persona
+}
+
+class EquipoLimpieza {
+  - nombre: string
+  - codigoEmpleado: string
+  - persona: Persona
+}
+
+class Bar {
+  - nombre: string
+  - camareros: Camarero[]
+  - jefe: Persona
+}
+
+class Jefe{
+    - nombre: string
+    - codigoEmpleado: string
+    - Bar: Bar
+    - persona: Persona
+}
+
+class Camarero {
+  - nombre: string
+  - codigoEmpleado: string
+  - bar: Bar
+  - persona: Persona
+}
+
+class Conserje{
+    - nombre: string
+    - codigoEmpleado: string
+    - EquipoAdministrativo: EquipoAdministrativo
+    - persona: Persona
+}
+
+class Limpiador{
+    - nombre: string
+    - codigoEmpleado: string
+    - EquipoLimpieza: EquipoLimpieza
+    - persona: Persona
+}
+
+class Aula {
+  - numero: string
+  - capacidad: int
+  - horarios: Horario[]
+}
+
+class Horario {
+  - diaSemana: string
+  - horaInicio: string
+  - horaFin: string
+  - programaAcademico: ProgramaAcademico
+}
+
+UNEAT -- Facultad : Contiene
+UNEAT -- Aula : Tiene
+UNEAT -- EquipoDirectivo : Tiene un
+UNEAT -- Secretaria : Tiene un
+UNEAT -- EquipoAdministrativo : Tiene un
+UNEAT -- EquipoLimpieza : Tiene un
+UNEAT -- Bar : Tiene un
+Facultad -- Decano : Tiene un
+Facultad -- EquipoDocente : Tiene un
+ProgramaAcademico -- Estudiante : Tiene
+ProgramaAcademico -- Profesor : Tiene
+ProgramaAcademico -- Horario : Tiene
+EquipoDocente -- ProgramaAcademico : Tiene
+EquipoDirectivo -- Rector : Tiene un
+EquipoDirectivo -- Decano : Tiene un
+EquipoAdministrativo -- Conserje  : Tiene un
+EquipoAdministrativo -- Secretario  : Tiene un
+EquipoLimpieza -- Limpiador: Tiene un
+Aula -- Horario : Tiene
+Secretaria -- Secretario : Tiene un
+Bar -- Camarero : Tiene
+Bar -- Jefe : Tiene
+Persona -- Decano : Es una
+Persona -- Jefe : Es una
+Persona -- Estudiante : Es una
+Persona -- Profesor : Es una
+Persona -- Secretario : Es una
+Persona -- Conserje : Es una
+Persona -- Limpiador : Es una
+
+@enduml
