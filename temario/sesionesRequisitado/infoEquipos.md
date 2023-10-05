@@ -25,27 +25,30 @@ Los documentos que se deben al final de esta dinámica (es decir, a fin de cuatr
 
 ## Cuándo y cómo lo haremos
 
-El planning previsto está publicado en la hoja de clase: dos sesiones de dos horas (como máximo) cada una, en las siguientes fechas:
+El planning previsto está publicado en la hoja de clase: como mínimo dos sesiones de dos horas cada una, en las siguientes fechas:
 
-Si hubiera algún inconveniente con estas fechas, sin ningún problema podemos ajustarlas. 
+- Semana del 16 al 20 de octubre.
+- Semana del 20 al 24 de noviembre. 
+
+||
+|-|
+Además de estas, se puede pactar con el cliente contactos extra si hace falta, sea por email, por reuniones, videollamada, etc.
+Lógicamente, que sea algo que les repercuta lo menos posible en las actividades del cliente.
+No descarten implicarse en un día (o unas horas) con el cliente (lógicamente si la discreción de las labores que están desarrollando lo permiten). 
+Como ingenieros de requisitos esta es una dinámica con la que se encontrarán en su día a día, así que cuanto más cercana a la realidad, mejor.
 
 <center>
 
-
-|Profesor|Sesión I|Sesión II
-|-|-|-|
-|Josep Alemany|
+|Profesor|py|Sesión I|Sesión II
+|-|:-:|-|-|
+|Josep Alemany|*pyReservasDxT*
 |Salvador Alfaro|
 |Clara Arnaiz|
-|Jorge Crespo|
-|David García|
+|Jorge Crespo|*pySimulacionIncedios*
+|David García|*pyHorarios*
 |Jesús Peña|
 
 </center>
-
-Si hubiera algún inconveniente con estas fechas, sin ningún problema podemos ajustarlas. 
-
-Luego de la primera sesión, se puede pactar con el cliente un contacto extra si hace falta, sea por email, por reuniones, videollamada, etc. Lo que sí, lógicamente, que sea algo que les repercuta lo menos posible en las actividades del cliente. No descarten implicarse en un día (o unas horas) con el cliente (lógicamente si la discreción de las labores que están desarrollando lo permiten). Como ingenieros de requisitos esta es una dinámica con la que se encontrarán en su día a día, así que cuanto más cercana a la realidad, mejor.
 
 ## Acerca de la conformación de los grupos
 
