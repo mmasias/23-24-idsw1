@@ -82,7 +82,7 @@ Es normal pasar por alto identificación de clases.
 
 ### Autoevaluación del modelo del dominio
 
-- Verifiquemos que sea correcto desde un punto de vista de sintáctico.
+- Verifiquemos que sea correcto desde un punto de vista de [sintáctico](mddCorreccionSintactica.md) y [semántico](mddCorreccionSemantica.md).
 - Que soporte todas las acciones a nivel de negocio que esté previsto realizar sobre dicho modelo de dominio.
 - Que facilite la gestión de las reglas de negocio asociadas al dominio.
 - Que facilite ciertas evoluciones razonablemente anticipables.
