@@ -6,7 +6,7 @@ Repo de materiales y proyectos de la asignatura **Ingeniería del Software I** d
 
 Primero, [#2Think](temario/2think.md)
 
-En la medida de lo posible, las clases en el aula -2.1
+Las clases en el aula 0.12
 
 * [Temario](temario/README.md)
 * [Retos](retos/README.md)
