@@ -42,7 +42,7 @@ Como ingenieros de requisitos esta es una dinámica con la que se encontrarán e
 |Profesor|py|Sesión I|Sesión II
 |-|:-:|-|-|
 |Josep Alemany|*pyReservasDxT*
-|Salvador Alfaro|
+|Salvador Alfaro|*pyTicketingDevelopers*
 |Clara Arnaiz|
 |Jorge Crespo|*pySimulacionIncedios*
 |David García|*pyHorarios*
@@ -53,7 +53,7 @@ Como ingenieros de requisitos esta es una dinámica con la que se encontrarán e
 ## Acerca de la conformación de los grupos
 
 - 6 a 7 integrantes por grupo
-- La proporción alumnoBecado/alumnoNoBecado debe estar entre 70% y 100%
-- Los grupos deben quedar conformados antes del 13 de octubre.
+- La proporción alumnoBecado/alumnoNoBecado debe estar entre 70% y 100%. Es decir: o bien (3B/3NB) o bien (3B/4NB). No hay más combinaciones.
+- Los grupos deben quedar conformados antes del 5 de octubre.
 - Si un alumno no tiene grupo, perderá la posibilidad de ser evaluado.
 - La fecha límite para la definición de grupos es el viernes 13 de octubre.
