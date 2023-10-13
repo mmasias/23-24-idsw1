@@ -49,12 +49,12 @@ class Becario {
     + obtenerInforme():  
 }
 
-Persona <|-- Uneatlantico
-Estudiante <|-- Persona
-Trabajador <|-- Persona
-Profesor <|-- Trabajador
-Administracion <|-- Trabajador
-PersonalGestion <|-- Administracion
-  
-Becario <|-- Trabajador
+Persona -- Uneatlantico
+Estudiante -- Persona
+Trabajador -- Persona
+Profesor -- Trabajador
+Administracion -- Trabajador
+PersonalGestion -- Administracion
+Becario -- Trabajador
+
 @enduml
