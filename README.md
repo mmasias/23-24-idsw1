@@ -10,10 +10,9 @@ Las clases en el aula 0.12
 
 * [Temario](temario/README.md)
 * [Retos](retos/README.md)
-* Proyectos que abordaremos:
-  * Sesiones de requisitado
-    * [Planteamiento](docs/sesionesRequisitado/infoParaAlumnos.md)
-    * [Grupos](docs/grupos.md)
+* Sesiones de requisitado
+  * [Planteamiento](temario/sesionesRequisitado/infoEquipos.md)
+  * [Repo de trabajo](https://github.com/mmasias/23-24-IdSw1-SDR)
 
 ## Herramientas
 

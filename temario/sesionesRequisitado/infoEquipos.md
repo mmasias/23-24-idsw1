@@ -18,10 +18,12 @@ Dentro de la disciplina de requisitado de la que les hablé líneas arriba, prec
 
 ## Qué obtendremos
 
-Los documentos que se deben al final de esta dinámica (es decir, a fin de cuatrimestre), serán dos:
+Los documentos que se deben presentar al final de esta dinámica (es decir, a fin de cuatrimestre), quedarán estructurados en dos grandes bloques:
 
-- Documento de modelo de dominio - que describe la realidad actual de sus procesos.
-- Documento de casos de uso - que describe lo que quieren hacer/automatizar/mejorar de esos procesos, mediante la solución que desarrollarían.
+- Documentos de modelo de dominio - que describe la realidad actual de sus procesos.
+- Documentos de casos de uso - que describe lo que quieren hacer/automatizar/mejorar de esos procesos, mediante la solución que desarrollarían.
+
+Estos documentos quedarán presentados de modo formal en el [**repositorio de la actividad**](https://github.com/mmasias/23-24-IdSw1-SDR), de acuerdo a los lineamientos que allí queden plasmados.
 
 ## Cuándo y cómo lo haremos
 
@@ -41,12 +43,12 @@ Como ingenieros de requisitos esta es una dinámica con la que se encontrarán e
 
 |Profesor|py|Sesión I|Sesión II
 |-|:-:|-|-|
-|Josep Alemany|*pyReservasDxT*
-|Salvador Alfaro|*pyTicketingDevelopers*
-|Clara Arnaiz|
-|Jorge Crespo|*pySimulacionIncedios*
-|David García|*pyHorarios*
-|Jesús Peña|
+|Jorge Crespo|*pySimulacionIncedios*|Jueves 19|
+|David García|*pyHorarios*|Jueves 19|
+|Jesús Peña||Jueves 19|
+|Josep Alemany|*pyReservasDxT*|Viernes 20|
+|Salvador Alfaro|*pyTicketingDevelopers*|Viernes 20|
+|Clara Arnaiz|*pyControlAsistencia*|Viernes 20|
 
 </div>
 
@@ -57,3 +59,10 @@ Como ingenieros de requisitos esta es una dinámica con la que se encontrarán e
 - Los grupos deben quedar conformados antes del 5 de octubre.
 - Si un alumno no tiene grupo, perderá la posibilidad de ser evaluado.
 - La fecha límite para la definición de grupos es el viernes 13 de octubre.
+
+## Acerca del trabajo
+
+- Reuniones oficiales (en horas de clase)
+  - A estas debe asistir el 100% de los integrantes de los grupos.
+  - Si a las reuniones asiste menos del 80% del grupo, la reunión se cancela y el grupo se da por cerrado. La evaluación se realiza de la forma tradicional (examen parcial, examen final).
+
