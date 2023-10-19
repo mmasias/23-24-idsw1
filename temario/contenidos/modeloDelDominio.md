@@ -90,10 +90,13 @@ Es normal pasar por alto identificación de clases.
 
 ### Artefactos
 
-- Diagramas de clases
-- Diagrama de objetos
-- Diagrama de actividades
-- Diagrama de estados
+- Entidades / Estático / "Fotos"
+  - Diagramas de clases
+  - Diagrama de objetos
+- Procesos / Dinámica / "Vídeos"
+  - Diagrama de secuencia
+  - Diagrama de estados
+  - Diagrama de actividades
 
 ### Ejemplo
 
