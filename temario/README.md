@@ -1,15 +1,7 @@
 # Temario
 
 * [x] [Acerca de la Ingeniería del Software](contenidos/acercaDe.md)
-  * [ ] Patrones
-  * [ ] Conocimiento
-  * [ ] Complejidad 
 * [ ] Elementos fundamentales en la producción de software
-  * [ ] Software
-  * [ ] Crisis del software
-  * [ ] Características
-  * [ ] Problemas del software
-  * [ ] Objetivos de la ingeniería de software
 * [ ] [RUP como proceso de desarrollo de software](rup.md)
 * [ ] [Disciplina de Requisitos](disciplinaDeRequisitos.md)
   * [x] [Modelo del dominio](contenidos/modeloDelDominio.md)
