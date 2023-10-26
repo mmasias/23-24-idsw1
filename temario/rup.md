@@ -70,12 +70,62 @@ Claridad en el proceso|Proporciona una guía clara para cada etapa del desarroll
 
 ### Fases
 
+#### Inicio
 
+* Donde la idea inicial se llevará hasta el punto de ser suficientemente fundada.
+  * Delimitar el ámbito del sistema propuesto
+  * Demostrar a los potenciales usuarios y/o clientes que el sistema propuesto es capaz de solventar su problema o soportar los objetivos del negocio construyendo un prototipo como prueba de concepto
+  * Describir o esbozar la arquitectura candidata
+  * Identificar los riesgos críticos
+
+#### Elaboración
+
+* Donde se define la arquitectura
+  * Identifica los riesgos significativos, lo que significa riesgos que podrían alterar los planes, costos y horarios de las fases posteriores
+  * Crea una línea de base arquitectónica que cubre la funcionalidad significativa del sistema y las características importantes para los implicados
+  * Especifica los niveles que deben alcanzar los atributos de calidad
+  * Captura casos de uso a aproximadamente 80% de los requerimientos funcionales
+  * Prepara una oferta que cubre horario, personal necesario y el costo en el plazo establecido por las prácticas comerciales
+
+#### Construcción
+
+* Donde el software se lleva su completitud
+  * Extiende la identificación de casos de uso, la descripción y realización a todo el cuerpo de casos de uso
+  * Acaba el análisis, diseño, implementación y pruebas
+  * Mantiene la integridad de la arquitectura, modificando cuando sea necesario
+  * Monitoriza los riesgos críticos y significatovos heredados de las dos primeras fases y, en caso de que se materialicen, mitigarlos
+
+#### Transición
+
+* Donde el software se pone en manos de la comunidad de usuarios
+  * Actividades de preparación, como el sitio web
+  * Asesorar al cliente sobre la actualización del entorno en el que el software operará
+  * Elaboración de manuales y otros documentos para la entrega a producción
+  * Ajuste del software para operar bajo los parámetros reales del entorno del usuario
+  * Corrección de los defectos encontrados después de la retroalimentación de la prueba beta
+  * Modificaciones del software a la luz de los problemas imprevistos
+
+<div align=center>
+
+||Inicio|Elaboración|Construcción|Transición|
+|-|:-:|:-:|:-:|:-:|
+**Duración**|10|30|50|10|
+**Esfuerzo**|5|20|65|10
+
+</div>
 
 ### Iteraciones
 
+<div align=center>
+
+![](/imagenes/modelosUML/RUPiteraciones.svg)
+
+</div>
+
 
 ### Actividades
+
+<div align=center>
 
 |Disciplina|Actividades|
 |-|-|
@@ -108,8 +158,6 @@ Disciplina de Pruebas
 ||22. Realizar Pruebas de Integración
 ||23. Realizar Pruebas de Sistemas
 ||24. Evaluar Pruebas
-
-<div align=center>
 
 ![](/imagenes/modelosUML/RUPdisciplinas.svg)
 
