@@ -25,6 +25,11 @@ Los documentos que se deben presentar al final de esta dinámica (es decir, a fi
 
 Estos documentos quedarán presentados de modo formal en el [**repositorio de la actividad**](https://github.com/mmasias/23-24-IdSw1-SDR), de acuerdo a los lineamientos que allí queden plasmados.
 
+Dos ejemplos de lo que deberíamos obtener se irán construyendo junto a ustedes en sendos repositorios:
+
+* [Una app de fútbol: minuto y resultado](https://github.com/mmasias/futbol)
+* [GoogleWave](https://github.com/mmasias/googleWave)
+
 ## Cuándo y cómo lo haremos
 
 El planning previsto está publicado en la hoja de clase: como mínimo dos sesiones de dos horas cada una, en las siguientes fechas:
