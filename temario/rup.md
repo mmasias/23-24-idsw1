@@ -62,8 +62,55 @@ Claridad en el proceso|Proporciona una guía clara para cada etapa del desarroll
 
 ### Roles
 
+<div align=center>
+
 ![](/imagenes/modelosUML/RUProles.svg)
 
+</div>
+
 ### Fases
+
+
+
 ### Iteraciones
+
+
 ### Actividades
+
+|Disciplina|Actividades|
+|-|-|
+Disciplina de Requisitos|
+||1. Encontrar Actores y Casos de Uso
+||2. Priorizar Casos de Uso
+||3. Detallar Caso de Uso
+||4. Estructurar Casos de Uso
+||5. Prototipar Interfaz de Usuario
+Disciplina de Análisis
+||6. Análisis de la Arquitectura
+||7. Análisis de Caso de Uso
+||8. Análisis de Clase
+||9. Análisis de Paquete
+Disciplina de Diseño
+||10. Diseño de la Arquitectura
+||11. Diseño de Caso de Uso
+||12. Diseño de Clase
+||13. Diseño de Paquete
+Disciplina de Implementación
+||14. Implementar la Arquitectura
+||15. Integración de Sistemas
+||16. Implementar Clase
+||17. Pruebas Unitarias
+||18. Implementar Subsistema
+Disciplina de Pruebas
+||19. Planificar Pruebas
+||20. Diseñar Pruebas
+||21. Implementar Pruebas
+||22. Realizar Pruebas de Integración
+||23. Realizar Pruebas de Sistemas
+||24. Evaluar Pruebas
+
+<div align=center>
+
+![](/imagenes/modelosUML/RUPdisciplinas.svg)
+
+</div>

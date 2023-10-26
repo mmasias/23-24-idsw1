@@ -1,7 +1,35 @@
 ' Autor: Prof. Luis Fernandez
 
-hide circle
-hide stereotype
+skinparam backgroundColor #222222
+
+skinparam default {
+    FontSize 20
+    FontName courier
+    FontStyle normal
+    FontColor #white
+}
+
+skinparam shadowing false
+skinparam padding 1
+
+skinparam arrow {
+    Thickness 2
+    Color #DarkGrey
+    FontSize 20
+    FontName courier
+    FontStyle normal
+    FontColor #DarkGrey
+}
+
+skinparam class {
+    BorderThickness 3
+    BorderColor #DarkGrey
+    BackgroundColor #222222
+    FontSize 20
+    FontName courier
+    FontStyle bold
+    FontColor #DarkGrey
+}
 
 skinparam classAttribute {
     FontSize 15
@@ -14,6 +42,9 @@ skinparam classAttribute {
     FontColor<<test>> #1E90FF
     FontColor<<several>> #ffa500
 }
+
+hide circle
+hide stereotype
 
 skinparam class {
     BorderColor<<requirement>> #DC143C
@@ -28,22 +59,6 @@ skinparam class {
     FontColor<<implementation>> #87ceeb
     FontColor<<test>> #1E90FF
     FontColor<<several>> #ffa500
-}
-
-skinparam arrow {
-    Thickness 2
-    Color #DarkGrey
-    FontSize 20
-    FontName courier
-    FontStyle normal
-    FontColor #DarkGrey
-}
-
-skinparam default {
-    FontSize 20
-    FontName courier
-    FontStyle normal
-    FontColor #black
 }
 
 
