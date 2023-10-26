@@ -10,10 +10,10 @@
     - [ ] Características
     - [ ] Problemas del software
     - [ ] Objetivos de la ingeniería de software
-- [ ] Ingeniería de Requisitos
+- [ ] [Disciplina de Requisitos](disciplinaDeRequisitos.md)
     - [x] [Modelo del dominio](contenidos/modeloDelDominio.md)
-    - [ ] Casos de Uso
-        - [ ] Encontrar actores y casos de uso
+    - [ ] [Casos de Uso](contenidos/CdU.md)
+        - [ ] [Encontrar actores y casos de uso](contenidos/CdU.eAyCdU.md)
         - [ ] Priorizar casos de uso
         - [ ] Detallar casos de uso
         - [ ] Prototipar casos de uso
