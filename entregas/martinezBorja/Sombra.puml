@@ -1,0 +1,35 @@
+@startuml clases
+
+luz - objeto : incide en
+luz -- sombra : genera una
+objeto --  forma : tiene una
+sombra - forma : tiene una
+objeto -- sombra : genera una
+sombra -- superficie : se proyecta sobre
+
+@enduml
+
+@startuml objetos
+
+object "foco : Luz" as foco{
+
+}
+object "persona : Objeto" as persona{
+
+}
+object "sombra : Sombra" as sombra{
+
+}
+object "suelo : Superficie" as suelo{
+
+}
+
+foco -- persona
+foco -- sombra
+persona -- sombra
+sombra -- suelo
+
+
+
+@enduml
+
