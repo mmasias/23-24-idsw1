@@ -38,7 +38,7 @@ El planning previsto son dos sesiones de dos horas (como máximo) cada una, en l
 - Semana del 16 al 20 de octubre.
 - Semana del 20 al 24 de noviembre.
 
-Si hubiera algún inconveniente con estas fechas, sin ningún problema podemos ajustarlas. 
+Si hubiera algún inconveniente con estas fechas, sin ningún problema podemos ajustarlas.
 
 <center>
 
@@ -53,7 +53,6 @@ Si hubiera algún inconveniente con estas fechas, sin ningún problema podemos a
 |Jesús Peña|
 
 </center>
-
 
 A las sesiones les sugeriría ir con "refuerzos" ;) es decir, si va alguien que trabaje ese tema con ustedes y puede aportar un punto de vista adicional, extra o incluso disruptivo, mucho mejor.
 
