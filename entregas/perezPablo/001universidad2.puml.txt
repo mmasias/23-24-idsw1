@@ -1,0 +1,92 @@
+@startuml UNEAT
+
+class Estudios {
++tipo: enum{Grado, PostGrado}
+
+}
+class Instalaciones {
++tipo: String
+}
+class Personal {
++tipo: enum{PersonalExterno, PersonalInterno}
+}
+class PersonalExterno{
++tipo: enum{limpieza, mantenimiento...}
++empresa: String
+}
+class PersonalInterno{
++tipo: enum{Profesor, PersonalAdministrativo}
+}
+class Grado{
++nombre: String
+}
+class PostGrado{
++nombre: String
++grado: Grado
+}
+class Alumno{
++nombre: String
++apellido1: String
++apellido2:String
++email:String
++movil:String
++carrera: Grado
+}
+class Profesor {
++nombre: String
++apellido1: String
++apellido2: String
++email: String
++movil: String
+}
+class PersonalAdministrativo{
++nombre: String
++apellido1: String
++apellido2:String
++email:String
++movil:String
+}
+class Aula {
++num: int
+}
+class InstalacionesDeportivas{
++nombre: String
++deporte: String
+}
+class Asignatura {
++nombre: String
++grado: Grado
++curso: int
++cuatrimestre: int
+}
+class Facultad {
++nombre: String
++numAulas: int
+}
+class Cafeteria{
++nombre: String
++planta: int
+}
+
+UNEAT-- Estudios : Ofrece
+UNEAT-- Instalaciones : Tiene
+UNEAT-- Personal : Tiene
+Instalaciones-- InstalacionesDeportivas
+Instalaciones-- Cafeteria
+Instalaciones-- Facultad
+Facultad-- Aula
+Estudios-- Grado
+Estudios-- PostGrado
+Grado-- Alumno
+PostGrado-- Alumno
+Personal-- PersonalInterno
+Personal-- PersonalExterno
+PersonalInterno-- Profesor
+PersonalInterno-- PersonalAdministrativo
+Grado-- Asignatura
+PostGrado-- Asignatura
+Grado-- Profesor
+PostGrado-- Profesor
+Profesor -- Asignatura : imparte
+
+@enduml

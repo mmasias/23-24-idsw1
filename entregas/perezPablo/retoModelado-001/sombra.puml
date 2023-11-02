@@ -1,0 +1,26 @@
+@startuml
+
+class Objeto {
+Nombre
+Tamanio
+Ubicacion
+
+}
+class Sombra {
+Tamanio
+Opacidad
+Posicion
+Intensidad
+Color
+
+}
+class Material
+class Luz {
+Reflejo
+}
+
+Objeto -- Luz
+Objeto -- Material
+Sombra -- Objeto
+
+@enduml
