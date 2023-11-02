@@ -1,0 +1,25 @@
+@startuml
+
+skinparam defaultFontName Arial
+
+class "FUENTE DE LUZ" {
+
+}
+
+class MATERIA {
+ no transparente
+}
+
+class SUPERFICIE {
+ no transparente
+}
+
+class SOMBRA {
+
+}
+
+"FUENTE DE LUZ" -- "MATERIA" : Alumbra
+"MATERIA" -- "SUPERFICIE" : Oscurece
+"SUPERFICIE" -- "SOMBRA" : Genera
+
+@enduml
