@@ -1,0 +1,47 @@
+@startuml
+
+Object Estudiante {
+    matrícula
+}
+
+Object Grado {
+    código
+}
+
+Object Profesor {
+    nombre
+}
+
+Object Uneatlantico {
+    universidad
+
+}
+
+Object Administración {
+    oficina
+}
+
+Object Matrícula {
+    cuatrimestre
+}
+
+Object Pago {
+    cantidad
+}
+
+Uneatlantico -r--> Grado: Ofrece-un
+Uneatlantico -d--> Profesor: contrata-a
+Uneatlantico -d--> Administración: tiene-una
+Estudiante -r--> Grado: Se-inscribe-a
+Profesor -d--> Grado: Enseña-un
+Estudiante -d--> Matrícula: Realiza
+Administración -r--> Matrícula: Gestiona-una
+Estudiante -d--> Pago: Realiza-pago-de
+Administración -r--> Pago: Verifica-el
+
+note "Entidad del modelo universitario" as n
+
+n -r-- Uneatlantico
+
+
+@enduml
