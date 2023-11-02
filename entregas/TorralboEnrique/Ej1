@@ -1,0 +1,11 @@
+@startuml
+
+Uneatlantico --|> Trabajador
+Uneatlantico --|> Alumno
+Alumno --|> Becario
+Trabajador --|> Profesor
+Trabajador --|> Administracion
+
+
+
+@enduml
