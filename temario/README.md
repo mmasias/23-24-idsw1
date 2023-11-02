@@ -6,8 +6,8 @@
 * [ ] [Disciplina de Requisitos](disciplinaDeRequisitos.md)
   * [x] [Modelo del dominio](contenidos/MdD.md)
   * [ ] [Casos de Uso](contenidos/CdU.md) - Actividades:
-    * [ ] [Encontrar actores y casos de uso](contenidos/CdU.eAyCdU.md)
+    * [x] [Encontrar actores y casos de uso](contenidos/CdU.eAyCdU.md)
     * [ ] Priorizar casos de uso
-    * [ ] Detallar casos de uso
+    * [x] [Detallar casos de uso](contenidos/Cdu.dCdU.md)
     * [ ] Prototipar casos de uso
     * [ ] Estructurar el modelo de casos de uso
