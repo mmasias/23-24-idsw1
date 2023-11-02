@@ -20,7 +20,7 @@ Imagen:
 
 
 
-![image](https://github.com/juanjoc711/23-24-idsw1/assets/114565115/cbe4977f-c195-4493-86ca-a75b1b538031)
+![image](https://github.com/juanjoc711/23-24-idsw1/assets/114565115/0d108b45-6fa5-4d8e-ac45-5cd97ef77100)
 
 
 
