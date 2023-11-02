@@ -1,0 +1,10 @@
+@startuml
+class Luz
+class Objeto
+class Sombra
+
+Luz --> Objeto: Alumbra
+'Objeto -- Luz : bloquea
+Objeto --> Sombra : Genera
+Sombra <-- Luz: Ausencia de
+@enduml
