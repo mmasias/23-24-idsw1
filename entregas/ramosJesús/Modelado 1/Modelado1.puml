@@ -1,0 +1,24 @@
+@startuml
+!theme plain
+
+class "Fuente de luz"
+{
+float intensidad
+Vector3 posicion
+int longitud_de_onda
+}
+
+class "Materia"
+{
+float indice_de_refracción
+float opacidad
+}
+
+class "Sombra"
+{
+}
+
+
+"Fuente de luz" --> Materia : Impacta
+Materia --> Sombra : Proyecta
+@enduml
