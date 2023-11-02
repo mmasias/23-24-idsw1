@@ -1,0 +1,26 @@
+@startuml Sombra y objeto
+
+class objeto {
+  volumen
+  posicion
+  angulo
+  rugosidades
+}
+
+class sombra {
+  proporcionX
+  proporcionY
+  opacidad
+  area
+}
+
+class luz {
+  angulo
+  intensidad ?
+}
+
+sombra <-- objeto
+objeto <-- luz
+sombra -- luz
+
+@enduml
