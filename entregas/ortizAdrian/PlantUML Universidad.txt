@@ -1,0 +1,66 @@
+@startuml Universidad
+
+class Universidad {
+  - nombre: string
+  - direccion: string
+  - fechaFundacion: Date
+}
+
+class Persona {
+  - nombre: string
+  - apellido: string
+  - fechaNacimiento: Date
+  - dni: String
+}
+
+class Estudiante {
+  - codigoEstudiante: string
+}
+
+class Asignatura {
+  - codigoAsignatura: string
+}
+
+class Profesor {
+  - codigoProfesor: string
+}
+
+class Becario {
+  - codigoBecario: string
+  - departamento: string
+}
+
+class Curso {
+  - codigoCurso: string
+  - nombre: string
+}
+
+class Nota {
+  - valor: float
+  - fecha: Date
+  - asignatura: string
+}
+
+class Departamento {
+  - nombre: string
+  + asignarBecario(becario: Becario)
+}
+
+Estudiante <|.. Persona :es
+Profesor <|.. Persona :es
+Becario <|.. Persona :es
+
+Universidad *-- Curso : tiene
+Universidad *-- Persona :tiene
+Universidad *-- Departamento :tiene
+Curso *-- Estudiante :tiene
+Curso *-- Profesor :tiene
+Curso *-- Asignatura :tiene
+Asignatura *-- Estudiante :tiene
+Asignatura *-- Profesor :tiene
+Asignatura *-- Nota :tiene
+Estudiante "1" *-- "0..*" Nota :tiene
+Profesor "1" *-- "0..*" Nota :pone
+Departamento "1" *-- "0..*" Becario :tiene
+
+@enduml

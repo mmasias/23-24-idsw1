@@ -1,0 +1,36 @@
+@startuml
+
+class FuenteDeLuz
+{
+ - Posicion
+ - Direccion
+ - Luminancia
+ - Intensidad
+ - Longitud de Onda
+}
+
+class Obstructor
+{
+ - Forma
+ - Material
+ -- Transparencia
+ -- Opacidad
+}
+
+
+class Sombra
+{
+ - Intensidad
+}
+
+class Superficie
+{
+ - Indice de refraccion
+ - Rugosidad
+ - Normal de superficie
+}
+
+FuenteDeLuz -- Obstructor : Ilumina a un
+Obstructor -- Sombra : Absorbe la luz y genera
+Sombra -- Superficie : Se Proyecta en una
+@enduml
