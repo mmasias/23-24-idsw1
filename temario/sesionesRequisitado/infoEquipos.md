@@ -25,6 +25,18 @@ Los documentos que se deben presentar al final de esta dinámica (es decir, a fi
 
 Estos documentos quedarán presentados de modo formal en el [**repositorio de la actividad**](https://github.com/mmasias/23-24-IdSw1-SDR), de acuerdo a los lineamientos que allí queden plasmados.
 
+Dos ejemplos de lo que deberíamos obtener se irán construyendo junto a ustedes en sendos repositorios:
+
+- [Una app de fútbol: minuto y resultado](https://github.com/mmasias/futbol)
+- [GoogleWave](https://github.com/mmasias/googleWave)
+
+Otros ejemplos existentes (ya completos, verlos con precaución para evitar *spoilers*):
+
+- [Taller AgrimManager](https://www.notion.so/Gestor-de-taller-mec-nico-AgrimManager-a8d44826c2494e15bcb235fc1019938d#cd3ccf181d9c4a1b9253416cd9b74f57) (Para visualizarlo requiere una cuenta de Notion)
+- [Aplicación Web de Gestión de Donaciones](https://drive.google.com/file/d/1Zt4tgtnFJ53uZrJv_zxlBb5QdMSK7nIg/view?usp=sharing)
+- [Tres en raya (tic tac toe)](https://github.com/USantaTecla-0-domains/game-ticTacToe)
+
+
 ## Cuándo y cómo lo haremos
 
 El planning previsto está publicado en la hoja de clase: como mínimo dos sesiones de dos horas cada una, en las siguientes fechas:
