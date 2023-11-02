@@ -1,0 +1,91 @@
+@startuml
+
+class Universidad {
+    Nombre: String
+    Ubicación: String
+}
+class Personal{
+    Nombre: String
+    Apellidos: String
+    Telefono: int
+    Email: String
+}
+class PDI {
+    super()
+}
+class PAS{
+    super()
+}
+class Facultad{
+    Nombre: String
+}
+class Grado {
+    Nombre: String
+    Pénsum: File
+}
+class Materia{
+    Código de materia: String
+    Créditos: int
+    Número de estudiantes: int
+}
+class "Curso Académico"{
+    Año Académico: String
+    Contenidos: File
+    Número de Alumnos: int
+}
+class Horario{
+    Fechas: Date
+}
+class Clase{
+    Hora: Time
+    Alumnos: Alumno[]
+    Profesor: Profesor
+}
+class Profesor{
+    super()
+}
+class Alumno {
+    Nombre: String
+    Apellidos: String
+    Teléfono: int
+    Email: String
+}
+class "Alumno Académico"{
+    super()
+}
+class "Alumno Becario"{
+    super()
+    Tipo de beca: String
+}
+class Departamento{
+    Número de personal: int
+    Nombre: String
+}
+
+
+Universidad -- Facultad : Contienen
+Universidad -- Personal : Contienen
+Universidad -- Departamento : Contienen
+Universidad --- Alumno: Contienen
+
+Personal -- PDI : Puede ser
+Personal -- PAS : Puede ser
+
+Facultad -- PDI : Hace parte
+
+
+Facultad -- Grado : Contienen
+Grado -- Materia : Contienen
+Materia -- "Curso Académico" : Contienen
+"Curso Académico" -- Horario : Contienen
+Horario -- Clase : Contienen
+PDI -- Profesor : Puede ser
+"Curso Académico" -- Profesor : Hace parte
+"Curso Académico" -- Alumno : Hace parte
+Profesor .. Clase
+Alumno .. Clase
+Alumno -- "Alumno Académico" : Puede ser
+Alumno -- "Alumno Becario": Puede ser
+Departamento --- PAS : Hace parte
+
+@enduml

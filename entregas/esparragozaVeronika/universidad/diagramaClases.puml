@@ -1,0 +1,21 @@
+@startuml
+class Profesor
+class Estudiante
+class PDI
+class PAS
+class Becario
+class Universidad
+class Facultad
+class Materia
+
+Estudiante -- Universidad : Hace parte
+Estudiante -- Materia : Estudia en
+Profesor -- Materia : Enseña en
+Becario -- Estudiante : Es un
+PDI -- Facultad : Hace parte
+Facultad -- Profesor : Pertenece
+PAS -- Universidad : Hace parte
+PDI -- Universidad : Hace parte
+Becario -- PDI : Ayuda
+Becario -- PAS : Ayuda
+@enduml

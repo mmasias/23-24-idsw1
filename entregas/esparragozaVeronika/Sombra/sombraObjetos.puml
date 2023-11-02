@@ -1,0 +1,13 @@
+@startuml
+
+object "Farol" as Luz
+object "Carro" as Objeto
+object "CarroSombra" as Sombra
+
+
+Luz -- Objeto: Alumbra
+'Objeto -- Luz : bloquea
+Objeto -- Sombra : Genera
+Sombra -- Luz: Ausencia de
+
+ @enduml
