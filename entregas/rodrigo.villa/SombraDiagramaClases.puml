@@ -1,0 +1,26 @@
+@startuml
+
+class Sombra {
+Posicion
+Tamaño 
+Intensidad
+}
+
+class Objeto {
+Ancho 
+Largo
+}
+
+class FuenteDeLuz {
+-Intensidad
+-Angulo
+}
+
+class Escenario {
+}
+FuenteDeLuz --> Escenario : Ilumina
+FuenteDeLuz --> Objeto : Ilumina
+Escenario --> Objeto : Contiene
+Objeto --> Sombra : Proyecta
+
+@enduml
