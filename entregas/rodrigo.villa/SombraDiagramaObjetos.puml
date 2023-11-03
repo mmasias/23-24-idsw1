@@ -1,0 +1,12 @@
+@startuml
+
+object "luz" as FuenteDeLuz
+object "calle" as Escenario
+object "persona" as  Objeto
+object "sombraPersona" as Sombra
+
+FuenteDeLuz --> Escenario : Ilumina
+FuenteDeLuz --> Objeto : Ilumina
+Escenario --> Objeto : Contiene
+Objeto --> Sombra : Proyecta
+@enduml
