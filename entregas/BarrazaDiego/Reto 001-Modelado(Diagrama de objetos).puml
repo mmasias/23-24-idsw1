@@ -1,0 +1,19 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+object "Lampara" as Luz
+object "Cuaderno" as Objeto
+object "Sombra_de_objeto" as Sombra
+
+Luz : encender()
+Luz : apagar()
+Objeto : escribir()
+Objeto : dibujar()
+Sombra : proyectar()
+Sombra : generar()
+
+Luz --> Objeto:Ilumina
+Objeto --> Sombra:Proyecta
+Luz --> Sombra:Genera
+
+@enduml
