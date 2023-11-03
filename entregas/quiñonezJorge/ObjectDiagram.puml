@@ -1,0 +1,34 @@
+@startuml shadow
+
+object "Sun: Light_Source" as sun{
+ + intensity
+ + range
+ + direction
+}
+
+object "Person: Object" as person {
+ + size
+ + form
+ + gender
+}
+
+object "Building: Object" as building {
+ + size
+ + form
+}
+
+object "PersonShadow: Shadow" as personShadow {
+ + size
+ + form
+}
+
+object "BuildingShadow: Shadow" as buildingShadow {
+ + size
+ + form
+}
+
+sun --> person : iluminates
+person --> personShadow : creates
+sun --> building : iluminates
+building --> buildingShadow : creates
+@enduml

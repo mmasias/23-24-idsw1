@@ -1,0 +1,10 @@
+@startuml Shadow
+
+class Object{}
+class Light_Source{}
+class Shadow{}
+
+Light_Source "1..*"--> "1" Object : illuminates
+Object "1" --> "1..* "Shadow : casts
+@enduml
+
