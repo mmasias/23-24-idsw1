@@ -1,0 +1,25 @@
+@startuml
+object Luz {
+  + Intensidad
+  + Color
+}
+
+object Objeto {
+  + Forma
+  + Material
+}
+
+object Sombra {
+  + Tamaño
+  + Densidad
+}
+
+Luz --> Objeto: ilumina
+Objeto --> Sombra : proyecta
+
+' Flecha curva con condición
+Luz ---> Objeto: si (condición) entonces
+Objeto --> Sombra : condición no cumple
+Objeto --> OtroObjeto : else
+' Fin de la condición
+@enduml
