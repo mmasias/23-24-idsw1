@@ -1,0 +1,15 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+
+Class Luz
+Class Objeto
+Class Sombra
+
+Luz --* Objeto: ilumina
+Luz --* Sombra:produce
+Objeto --* Sombra:crea
+
+
+
+@enduml
