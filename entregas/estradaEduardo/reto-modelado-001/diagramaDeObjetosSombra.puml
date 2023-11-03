@@ -1,0 +1,10 @@
+@startuml
+object "mesa" as Superficie
+object "pelota" as Objeto
+object "sombraPelota" as Sombra
+object "luzLampara" as Luz
+
+Objeto --|>  Sombra: proyecta
+Sombra --|> Superficie : se refleja en
+Luz --|> Objeto : ilumina
+@enduml
