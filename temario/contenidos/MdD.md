@@ -90,10 +90,17 @@ Es normal pasar por alto identificación de clases.
 
 ### Artefactos
 
-- Diagramas de clases
-- Diagrama de objetos
-- Diagrama de actividades
-- Diagrama de estados
+[¡Diagramas!](diagramas001.md)
+
+||||
+|-|-|-|
+Entidades / Estático / "Fotos"
+||[Diagramas de clases](https://plantuml.com/es/class-diagram)|Clases de objetos y relaciones.
+||[Diagrama de objetos](https://plantuml.com/es/object-diagram)|Muestra objetos y sus relaciones en un momento determinado.
+Procesos / Dinámica / "Vídeos"
+||[Diagrama de actividades](https://plantuml.com/es/activity-diagram-beta)|A.k.a. "diagrama de flujo"
+||[Diagrama de estado](https://plantuml.com/es/state-diagram)|Representación visual de los distintos estados en los que puede encontrarse un sistema o un objeto, así como de las transiciones entre esos estados.
+||[Diagrama de secuencia](https://plantuml.com/es/sequence-diagram)|Mensajes entre participantes
 
 ### Ejemplo
 
@@ -104,3 +111,8 @@ Es normal pasar por alto identificación de clases.
 |3. Añadir las asociaciones necesarias para registrar las relaciones.|![](/imagenes/modelosUML/mdd002.svg)
 |4. Añadir los atributos que satisfagan los requisitos de información.|![](/imagenes/modelosUML/mdd004.svg)
 |5. Iterar...|![](/imagenes/modelosUML/mdd005.svg)
+
+### Ejemplos en contexto
+
+- [Fútbol](https://github.com/mmasias/futbol)
+- [GoogleWave](https://github.com/mmasias/googleWave)
