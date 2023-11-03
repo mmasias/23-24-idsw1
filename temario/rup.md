@@ -51,6 +51,8 @@ Esto incluye:
 
 ## ¿Para qué?
 
+> **Convertir los requisitos del cliente en un producto de software.**
+
 |||
 |-|-|
 Gestionar riesgos|Mediante la entrega iterativa, los riesgos se identifican y resuelven progresivamente, evitando sorpresas al final del desarrollo.
@@ -59,6 +61,39 @@ Facilitar la adaptación a cambios|La naturaleza iterativa permite incorporar ca
 Claridad en el proceso|Proporciona una guía clara para cada etapa del desarrollo, definiendo qué debe realizarse, por quién y cuándo.
 
 ## ¿Cómo?
+
+<div align=center>
+
+|||
+|-|-|
+Actividad|Unidad de trabajo solicitado por un rol y que produce un resultado significativo en el contexto del proyecto: habitualmente crear o modificar artefactos.
+||Unidad de trabajo solicitado por o asignado a un rol y que produce un reultado significativo en el contexto del proyecto: habitualmente crear o modificar artefactos.
+||Tiene un propósito claro, habitualmente crear o modificar artefactos.
+Artefacto|Productos tangibles de un proyecto, compuestos por piezas de información que se produce, modifica o utiliza en un proceso.
+||Suelen ser formales.
+||Suelen ser resultado de las actividades.
+||Suelen estar sujetos al CVS.
+Rol|Comportamiento y responsabilidad de un equipo (1..* individuos).
+||Utilizan artefactos para realizar actividades.
+Proceso|Secuencia de actividades que modifican artefactos mediante interacciones entre roles.
+Disciplinas|Organizan las actividades del proceso.
+
+</div>
+
+### Disciplinas
+
+<div align=center>
+
+|Técnicas|De soporte|
+|-|-|
+Modelado del dominio.|Gestión de proyecto
+Requisitos.|Entorno
+Análisis.|Configuración y gestión de cambios
+Diseño.|Despliegue
+Implementación.|
+Pruebas.|
+
+</div>
 
 ### Roles
 

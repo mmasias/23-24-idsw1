@@ -1,0 +1,11 @@
+@startuml
+
+Class Luz
+Class Objeto
+Class Sombra
+
+Luz *-- Objeto
+Luz *-- Sombra
+Objeto *-- Sombra
+
+@enduml
