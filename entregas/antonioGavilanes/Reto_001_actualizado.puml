@@ -1,0 +1,37 @@
+@startuml
+class Universidad{
+  + nombre
+  + dirección
+}
+class Profesor{
+  + nombre
+}
+class Director_de_Grado{
+  + nombre
+}
+class Alumno{
+  + nombre
+}
+class Becario{
+  + nombre
+}
+class Personal{
+  + nombre
+}
+class Salón{
+  + número
+  + planta
+
+}
+class Equipo
+
+Profesor }|--|| Director_de_Grado
+Grado ||--|| Director_de_Grado
+Universidad ||--|{ Grado
+Universidad ||--|{ Personal
+Grado ||--|{ Alumno
+Profesor ||--|{ Grado
+Alumno }|--|{ Becario
+Grado }|--|{ Salón
+Salón }|--|{ Equipo
+@enduml

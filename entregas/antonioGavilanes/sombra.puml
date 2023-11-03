@@ -1,0 +1,14 @@
+@startuml
+class Luz{
+  Intensidad
+  Dirección
+  Ángulo
+}
+class Sombra{
+  Tamaño
+  Posición
+}
+Luz -- Objeto:refleja
+Objeto -- Sombra:crea
+Luz .. Sombra:genera
+@enduml

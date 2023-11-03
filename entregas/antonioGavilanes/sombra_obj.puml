@@ -1,0 +1,9 @@
+@startuml
+object "Sol" as Luz
+object "Auto" as Objeto
+object "Sombra_Del_Auto" as Sombra
+
+Luz -- Objeto:refleja
+Objeto -- Sombra:crea
+Luz .. Sombra:genera
+@enduml
