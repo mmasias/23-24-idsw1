@@ -1,0 +1,16 @@
+@startuml
+class Luz {
+ 
+}
+
+class Objeto {
+
+}
+
+class Sombra {
+
+}
+
+Luz --> Objeto: ilumina
+Objeto --> Sombra : proyecta
+@enduml
