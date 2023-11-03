@@ -1,0 +1,19 @@
+@startuml
+
+class Objeto {
+
+}
+
+class FuenteDeLuz {
+
+}
+
+class Sombra {
+
+}
+
+FuenteDeLuz -- Objeto : Produce
+Objeto -- Sombra : Depende
+FuenteDeLuz -- Sombra : Varía
+
+@enduml
