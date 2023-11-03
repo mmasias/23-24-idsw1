@@ -1,0 +1,14 @@
+@startuml
+
+[*] --> ObjetoSinIluminar
+ObjetoSinIluminar --> ObjetoIluminado: Luz incide en el objeto
+ObjetoIluminado --> ObjetoSinIluminar: Luz se retira
+ObjetoIluminado --> SombraProyectada: Luz incide con ángulo
+SombraProyectada --> SombraAlargada: Luz disminuye su ángulo
+SombraAlargada --> SombraProyectada: Luz aumenta su ángulo
+SombraProyectada --> SombraAlargada: Luz se incrementa
+SombraDesvanecida <-- SombraProyectada: Luz se disminuye
+SombraDesvanecida --> ObjetoSinIluminar: Luz se retira
+SombraAlargada --> ObjetoSinIluminar: Luz se retira
+
+@enduml
