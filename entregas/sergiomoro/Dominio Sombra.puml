@@ -1,0 +1,22 @@
+@startuml
+class Luz {
+  - intensidad
+  - angulo
+  - color
+  + iluminar(objeto: Objeto): void
+}
+class Objeto {
+  - forma
+  - material
+  + proyectarSombra(luz: Luz): Sombra
+}
+class Sombra {
+  - forma
+  - direccion
+  - longitud
+  - grosor
+  + dibujar(canvas: Canvas): void
+}
+Luz "1" -- "usa" Objeto : ilumina >
+Objeto "1" -- "crea" Sombra : proyecta >
+@enduml
