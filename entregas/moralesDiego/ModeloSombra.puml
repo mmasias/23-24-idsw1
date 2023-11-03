@@ -1,0 +1,9 @@
+@startuml Sombra
+Class Sombra{}
+Class Cosa{}
+Class Luz{}
+
+Cosa -> Sombra : Pertence
+Luz -> Cosa : Alumbra
+Luz -> Sombra : Produce
+@enduml
