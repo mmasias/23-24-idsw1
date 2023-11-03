@@ -1,0 +1,64 @@
+@startuml
+
+class Universidad {
+  + nombre: String
+  + fundacion: Date
+  + ubicacion: String
+}
+
+class Rector {
+  + nombreCompleto: String
+  + periodo: String  // Ejemplo: "2023-2026"
+}
+
+class Profesor {
+  + nombreCompleto: String
+  + especialidad: String
+  + antiguedad: int
+}
+
+class Asignatura {
+  + titulo: String
+  + codigo: String
+  + semestre: int
+}
+
+class Grado {
+  + titulo: String
+  + codigo: String
+  + totalAsignaturas: int
+}
+
+class Departamento {
+  + area: String
+  + numTrabajadores: int
+}
+
+class Trabajador {
+  + nombreCompleto: String
+  + puesto: String
+  + antiguedad: int
+}
+
+class Alumno {
+  + nombreCompleto: String
+  + fechaInscripcion: Date
+  + grado: Grado
+  + tipo: TipoBeca
+}
+
+enum TipoBeca {
+  Becado,
+  NoBecado
+}
+
+Universidad -down- Rector: "designa >"
+Universidad "1" -left- "*" Profesor: "contrata >"
+Universidad "1" -right- "*" Departamento: "tiene >"
+
+Grado -down- Asignatura: "compuesto por >"
+Profesor -right- Asignatura: "imparte >"
+Departamento -down- Trabajador: "integra >"
+Grado -left- Alumno: "inscribe >"
+
+@enduml

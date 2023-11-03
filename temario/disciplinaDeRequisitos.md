@@ -6,6 +6,6 @@
 |-:|
 ![](/imagenes/modelosUML/disciplinaRequisitos.svg)
 *Autor: Prof. Luis Fernández*
-
+![](/imagenes/modelosUML/disciplinaRequisitos_2.svg)
 
 </div>
