@@ -1,0 +1,8 @@
+Entity Sombra
+Entity Objecto
+Entity Luz
+
+
+Sombra --- Luz
+Sombra <-- Objecto
+Luz --> Objecto
