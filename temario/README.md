@@ -7,7 +7,7 @@
   * [x] [Modelo del dominio](contenidos/MdD.md)
   * [ ] [Casos de Uso](contenidos/CdU.md) - Actividades:
     * [x] [Encontrar actores y casos de uso](contenidos/CdU.eAyCdU.md)
-    * [ ] Priorizar casos de uso
+    * [x] [Priorizar casos de uso](contenidos/CdU.PCdU.md)
     * [x] [Detallar casos de uso](contenidos/Cdu.dCdU.md)
-    * [ ] Prototipar casos de uso
+    * [x] [Prototipar casos de uso](contenidos/CdU.ICdU.md)
     * [ ] Estructurar el modelo de casos de uso

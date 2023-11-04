@@ -41,7 +41,7 @@ Lista de características||casos de uso
 
 </div>
 
-### Actores
+### Los actores
 
 Un actor especifica un rol que adopta una entidad externa cuando interactúa con el sistema directamente (no en respuesta). Puede representar el rol de un usuario o el rol jugado por otro sistema que toca los límites de tu sistema. Los actores representan roles que personas o cosas juegan en relación con el sistema, no personas o cosas específicas (p.e. administrador, no Pepe).
 
@@ -55,7 +55,7 @@ Un actor especifica un rol que adopta una entidad externa cuando interactúa con
 * ¿Quién obtiene y provee información al sistema?
 * ¿Qué roles juegan en la interacción?
 
-## Casos de Uso
+### Los Casos de Uso
 
 Un caso de uso es una especificación de secuencias de acciones, incluyendo variaciones, que el sistema puede realizar y que dan un resultado observable de interés a un actor particular
 
@@ -69,22 +69,20 @@ Un caso de uso es una especificación de secuencias de acciones, incluyendo vari
 * Recordar que intentamos crear casos de uso que son fáciles de modificar, revisar, probar y gestionar como una unidad
 * Es útil modelar la trazabilidad entre los requisitos y la lista de características
 
-## Describir brevemente cada caso de uso
+### Describir brevemente cada Caso de Uso
 
 Usar unas pocas palabras para explicar cada caso de uso o incluso (**muy recomendado**) simplemente asignar bien el nombre del caso de uso, que a menudo comienza con un verbo
 
-## Describir el modelo de casos de uso como un todo
+### Describir el modelo de casos de uso como un todo
 
 Se debe lograr explicar el modelo de casos de uso en su conjunto, particularmente la forma en el que los casos de uso se relacionan:
 
-* Con los actores, con diagramas de casos de uso
-* Entre sí, con diagramas de estado 
+* Con los actores, con diagramas de casos de uso.
+* Entre sí, con diagramas de estado.
 
 Este paso incluye preparar un glosario de términos
 
 Es muy útil permitir a las personas que no son parte del equipo de desarrollo aprobar el modelo de casos de uso conducido con una entrevista informal
-
-## Bla bla bla extra
 
 ### Validación y revisión
 
