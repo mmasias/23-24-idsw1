@@ -10,6 +10,9 @@ Las clases en el aula 0.12
 
 * [Temario](temario/README.md)
 * [Retos](retos/README.md)
+- Evaluaciones
+  - Exámenes
+    - Parcial, *post mortem*: [Enunciado](temario/ExamenParcial-PostMortem.md)|[Repositorio de trabajo y entrega](https://classroom.github.com/a/RI-KikDW)
 * Sesiones de requisitado
   * [Planteamiento](temario/sesionesRequisitado/infoEquipos.md)
   * [Repo de trabajo](https://github.com/mmasias/23-24-IdSw1-SDR)
