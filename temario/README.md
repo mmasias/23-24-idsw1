@@ -11,3 +11,5 @@
     * [x] [Detallar casos de uso](contenidos/Cdu.dCdU.md)
     * [x] [Prototipar casos de uso](contenidos/CdU.ICdU.md)
     * [ ] Estructurar el modelo de casos de uso
+
+- Extra: [Links a diapositivas](https://drive.google.com/drive/folders/1m_wsaMgdAHJ5gYKcpwJtU1IeDWRtLsAj?usp=sharing)
